@@ -225,7 +225,7 @@ function closeForm() {
                 <div class="row">
                     
         <?php
-            $conn = mysqli_connect("krishiapp.database.windows.net", "Anup98", "Gandhi98@", "examplevalid");
+            $conn = mysqli_connect("krishiapp.database.windows.net", "Anup98", "Gandhi98@", "examplevalid (krishiapp/examplevalid)");
              //$conn = mysqli_connect("localhost", "root", "", "examplevalid");
             //check connection
             if(!$conn){
