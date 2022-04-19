@@ -57,7 +57,7 @@
 		$state=$_POST['state'];  
 
 		           //connect database
-				$conn = mysqli_connect("krishiapp.database.windows.net", "Anup98", "Gandhi98@", "examplevalid (krishiapp/examplevalid)");
+				$conn = new PDO("sqlsrv:server = tcp:krishiapp.database.windows.net,1433; Database = examplevalid", "Anup98", "Gandhi98@");
 			//$conn = mysqli_connect("localhost", "root", "", "examplevalid");
 			
 		    //check connection
