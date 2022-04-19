@@ -185,7 +185,7 @@ if(!isset($_SESSION["sess_user"])){
             <h2 class="title">Latest upload</h2>
             <div class="row">
                 <?php
-         $conn = mysqli_connect("krishiapp.database.windows.net", "Anup98", "Gandhi98@", "examplevalid");
+         $conn = new PDO("sqlsrv:server = tcp:krishiapp.database.windows.net,1433; Database = examplevalid", "Anup98", "Gandhi98@");
           //$conn = mysqli_connect("localhost", "root", "", "examplevalid");
         //check connection
            if(!$conn){
