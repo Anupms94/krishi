@@ -1,7 +1,7 @@
 <?php 
-	$server = "localhost";
-	$username = "root";
-	$password = "";
+	$server = "tcp:krishiapp.database.windows.net,1433";
+	$username = "Anup98";
+	$password = "Gandhi98@";
 	$dbname = "examplevalid";
 	
 	$conn = mysqli_connect($server, $username, $password, $dbname);
