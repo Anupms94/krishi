@@ -171,8 +171,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
             // echo $result;
 
-            $conn = mysqli_connect("tcp:krishiapp.database.windows.net,1433", "Anup98", "Gandhi98@", "examplevalid");
-
+            $conn = new PDO("sqlsrv:server = tcp:krishiapp.database.windows.net,1433; Database = examplevalid", "Anup98", "Gandhi98@");
             $search = mysqli_real_escape_string($conn, $_POST['msg']);
             $sql = "SELECT * FROM queandans WHERE ques LIKE '%$search%'";
             $result = mysqli_query($conn, $sql);
@@ -225,7 +224,7 @@ function closeForm() {
                 <div class="row">
                     
         <?php
-            $conn = mysqli_connect("tcp:krishiapp.database.windows.net,1433", "Anup98", "Gandhi98@", "examplevalid");
+            $conn = new PDO("sqlsrv:server = tcp:krishiapp.database.windows.net,1433; Database = examplevalid", "Anup98", "Gandhi98@");
              //$conn = mysqli_connect("localhost", "root", "", "examplevalid");
             //check connection
             if(!$conn){
