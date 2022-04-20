@@ -50,7 +50,7 @@
 		$fmobile=$_POST['phone']; 
 		$fpass=$_POST['password'];
 		           //connect database
-				   $conn = mysqli_connect("krishiapp.database.windows.net", "Anup98", "Gandhi98@", "examplevalid");
+				   $conn = mysqli_connect("tcp:krishiapp.database.windows.net,1433", "Anup98", "Gandhi98@", "examplevalid");
 			//$conn = mysqli_connect("localhost", "root", "", "examplevalid");
 		    //check connection
 		    if(!$conn){
