@@ -1,5 +1,5 @@
 # krishiMitra
-krishimitra is a sample application that gives you to online platform to reach direct to coutomer and same for for coustomer that you get product from seller .
+krishimitra is a sample application that gives you online platform to reach direct to coutomer and same for for coustomer that you get product from seller .
 
 This version of Krishimitra app is built with javascript,Html,Css and PHP.
 
