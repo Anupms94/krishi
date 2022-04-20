@@ -171,7 +171,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
             // echo $result;
 
-            mysqli_connect("tcp:krishiapp.database.windows.net,1433", "Anup98", "Gandhi98@", "examplevalid");
+            $conn = mysqli_connect("tcp:krishiapp.database.windows.net,1433", "Anup98", "Gandhi98@", "examplevalid");
 
             $search = mysqli_real_escape_string($conn, $_POST['msg']);
             $sql = "SELECT * FROM queandans WHERE ques LIKE '%$search%'";
@@ -225,7 +225,7 @@ function closeForm() {
                 <div class="row">
                     
         <?php
-            mysqli_connect("tcp:krishiapp.database.windows.net,1433", "Anup98", "Gandhi98@", "examplevalid");
+            $conn = mysqli_connect("tcp:krishiapp.database.windows.net,1433", "Anup98", "Gandhi98@", "examplevalid");
              //$conn = mysqli_connect("localhost", "root", "", "examplevalid");
             //check connection
             if(!$conn){
